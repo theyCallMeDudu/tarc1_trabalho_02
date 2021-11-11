@@ -20,6 +20,11 @@ h2 {
     padding-left: 5px;
 }
 
+h3 {
+    border-left: 6px solid goldenrod;
+    padding-left: 5px;
+}
+
 .dados-trabalho {
     border-left: 2px solid goldenrod;
     padding-left: 4px;
