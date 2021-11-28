@@ -10,8 +10,6 @@
 <script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
 <!-- Importanto arquivo CSS -->
 <link rel="stylesheet" href="style.css"/>
-
-
 </head>
 
 <body>
@@ -22,7 +20,7 @@
         <li class="dados-trabalho">Aluno: Eduardo Coelho</li>
         <li class="dados-trabalho">Disciplina: TARC 1</li>
         <li class="dados-trabalho">Professor(a): Morganna Carmem Diniz</li>
-        <li class="dados-trabalho">Tema: Euro Truck Simulator 2</li>
+        <li class="dados-trabalho">Tema: Euro Truck Simulator 2 🚚</li>
         <li class="dados-trabalho">Repositório no GitHub: 
             <a href="https://github.com/theyCallMeDudu/tarc1_trabalho_02" target="_blank">
                 <i class="fab fa-github"></i>
@@ -38,9 +36,8 @@
             </li>
             
             <li class="atividade-lista">
-                <a href="#teste">Teste</a>
+                <a href="#marcas">Hide & Show</a>
             </li>
-
 
         </ul>
     <hr>
@@ -69,6 +66,7 @@
         
     </p>
 
+    <hr>
     <h2>Relógio</h2>
     
     <!-- Centraliza relógio -->
@@ -89,19 +87,50 @@
         </div>
     </div>
 
-    <h2>Teste</h2>
+    <hr>
+    <h2>Hide & Show (marcas de caminhões)</h2>
 
-    <p id="teste">
-        Apoiava brandamente as faces contra as belas faces do travesseiro que, cheias e frescas, 
-        são como os rostos da nossa infância. Riscava um fósforo para ver o relógio. Quase meia-noite. É 
-        o momento em que o enfermo, que teve de viajar e ir dormir num hotel desconhecido, acordado 
-        por uma crise, se alegra ao distinguir debaixo da porta um raio de luz. Felicidade! Já é dia! Daqui 
-        a pouco os criados vão se levantar, poderá tocar a campainha, virão prestar-lhe socorro. A 
-        esperança de ser aliviado lhe dá coragem para suportar o sofrimento. Ainda agora pensou ouvir 
-        passos; os passos se aproximam e logo se afastam. E o fio de luz que estava sob a porta 
-        desapareceu. É meia-noite; acabam de apagar o gás; o último criado já se retirou e é preciso ficar 
-        a noite inteira sofrendo sem remédio.
-    </p>
+    <div id="marcas">
+        <ul>
+            <li id="volvo" class="marca"><strong>Volvo</strong></li>
+            <div id="div-volvo" style="display: none;">
+                Logotipo: <img src="img/logo-volvo.png" alt="Logotipo Volvo" width="50">
+                <p style="display: block;">Nº de caminhões no jogo: </p>
+            </div>
+
+            <li id="scania" class="marca"><strong>Scania</strong></li>
+            <div id="div-scania" style="display: none;">
+                Logotipo: <img src="img/logo-scania.png" alt="Logotipo Scania" width="60">
+                <p style="display: block;">Nº de caminhões no jogo: </p>
+            </div>
+
+            <li id="mercedes" class="marca"><strong>Mercedes</strong></li>
+            <div id="div-mercedes" style="display: none;">
+                <p>Logotipo: <img src="img/logo-mercedes.png" alt="Logotipo Mercedes Benz" width="50"></p>
+                <p style="display: block;">Nº de caminhões no jogo: </p>
+            </div>
+            
+            <li id="man" class="marca" ><strong>MAN</strong></li>
+            <div id="div-man" style="display: none;">
+                <p>Logotipo: <img src="img/logo-man.png" alt="Logotipo MAN" width="50"></p>
+                <p style="display: block;">Nº de caminhões no jogo: </p>
+            </div>
+            
+            <li id="renault" class="marca" ><strong>Renault</strong></li>
+            <div id="div-renault" style="display: none;">
+                <p>Logotipo: <img src="img/logo-renault.png" alt="Logotipo Renault" width="40"></p>
+                <p style="display: block;">Nº de caminhões no jogo: </p>
+            </div>
+            
+            <li id="daf" class="marca" ><strong>DAF</strong></li>
+            <div id="div-daf" style="display: none;">
+                <p>Logotipo: <img src="img/logo-daf.png" alt="Logotipo DAF" width="60"></p>
+                <p style="display: block;">Nº de caminhões no jogo: </p>
+            </div>
+            
+            
+        </ul>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
