@@ -8,6 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 <!-- Importando Fonte Awesome -->
 <script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
+<!-- Importando Bootstrap -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="js/popper.min.js"></script>
 <!-- Importanto arquivo CSS -->
 <link rel="stylesheet" href="style.css"/>
 </head>
@@ -16,6 +19,7 @@
     <h1 id="unirio">
         TARC 1
     </h1>
+    <div class="cabecalho">
     <ul>
         <li class="dados-trabalho">Aluno: Eduardo Coelho</li>
         <li class="dados-trabalho">Disciplina: TARC 1</li>
@@ -27,12 +31,17 @@
             </a>
         </li>
     </ul>
+    </div>
     
     <hr>
         <ul>
             <h3>Atividades Desenvolvidas</h3>
             <li class="atividade-lista">
                 <a href="#item-relogio">Relógio</a>
+            </li>
+            
+            <li class="atividade-lista">
+                <a href="#quiz">Quiz</a>
             </li>
             
             <li class="atividade-lista">
@@ -66,10 +75,10 @@
         
     </p>
 
+    <!-- Início Relógio -->
     <hr>
     <h2>Relógio</h2>
     
-    <!-- Centraliza relógio -->
     <div class="center"> 
         <div class="relogio-analogico" id="item-relogio">
             <div class="seg"></div>
@@ -86,7 +95,46 @@
             <div id="ampm"></div>
         </div>
     </div>
+    <!-- Fim Relógio -->
 
+    <!-- Início Quiz -->
+    <hr>
+    <h2>Quiz</h2>
+    <div id="quiz">
+        <div class="box-quiz">
+            <div class="content-quiz">
+                <h4 style="color: goldenrod; text-shadow: 4px 4px black;"><strong>Quiz Euro Truck Simulator 2</strong></h4>
+                <form id="form-quiz">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nome" placeholder="Nome do jogador" autocomplete="off">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" id="btn-comecar">Começar</button>
+                        <button type="submit" class="btn btn-success" id="btn-resultados">Resultados</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+            <div class="box-resultados">
+                <div id="div-resultados" hidden>
+                    <table class="table" id="resultados">
+                        <thead>
+                            <h5><strong>Resultados</strong></h5>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Pontuação</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+    </div>
+    <!-- Fim Quiz -->
+
+    <!-- Início Hide & Show -->
     <hr>
     <h2>Hide & Show (marcas de caminhões)</h2>
 
@@ -94,46 +142,65 @@
         <ul>
             <li id="volvo" class="marca"><strong>Volvo</strong></li>
             <div id="div-volvo" style="display: none;">
-                Logotipo: <img src="img/logo-volvo.png" alt="Logotipo Volvo" width="50">
-                <p style="display: block;">Nº de caminhões no jogo: </p>
+                Logotipo: <img src="img/logo-volvo.png" alt="Logotipo Volvo" width="40">
+                <p style="display: block;">Nº de modelos disponíveis no jogo: 2</p>
             </div>
+            
 
             <li id="scania" class="marca"><strong>Scania</strong></li>
             <div id="div-scania" style="display: none;">
-                Logotipo: <img src="img/logo-scania.png" alt="Logotipo Scania" width="60">
-                <p style="display: block;">Nº de caminhões no jogo: </p>
+                Logotipo: <img src="img/logo-scania.png" alt="Logotipo Scania" width="65">
+                <p style="display: block;">Nº de modelos disponíveis no jogo: 4</p>
             </div>
+            
 
             <li id="mercedes" class="marca"><strong>Mercedes</strong></li>
             <div id="div-mercedes" style="display: none;">
-                <p>Logotipo: <img src="img/logo-mercedes.png" alt="Logotipo Mercedes Benz" width="50"></p>
-                <p style="display: block;">Nº de caminhões no jogo: </p>
+                <p>Logotipo: <img src="img/logo-mercedes.png" alt="Logotipo Mercedes Benz" width="40"></p>
+                <p style="display: block;">Nº de modelos disponíveis no jogo: 2</p>
             </div>
+            
             
             <li id="man" class="marca" ><strong>MAN</strong></li>
             <div id="div-man" style="display: none;">
-                <p>Logotipo: <img src="img/logo-man.png" alt="Logotipo MAN" width="50"></p>
-                <p style="display: block;">Nº de caminhões no jogo: </p>
+                <p>Logotipo: <img src="img/logo-man.png" alt="Logotipo MAN" width="55"></p>
+                <p style="display: block;">Nº de modelos disponíveis no jogo: 2</p>
             </div>
             
+
             <li id="renault" class="marca" ><strong>Renault</strong></li>
             <div id="div-renault" style="display: none;">
                 <p>Logotipo: <img src="img/logo-renault.png" alt="Logotipo Renault" width="40"></p>
-                <p style="display: block;">Nº de caminhões no jogo: </p>
+                <p style="display: block;">Nº de modelos disponíveis no jogo: 3</p>
             </div>
             
+
             <li id="daf" class="marca" ><strong>DAF</strong></li>
             <div id="div-daf" style="display: none;">
-                <p>Logotipo: <img src="img/logo-daf.png" alt="Logotipo DAF" width="60"></p>
-                <p style="display: block;">Nº de caminhões no jogo: </p>
+                <p>Logotipo: <img src="img/logo-daf.png" alt="Logotipo DAF" width="65"></p>
+                <p style="display: block;">Nº de modelos disponíveis no jogo: 2</p>
             </div>
             
+
+            <li id="iveco" class="marca" ><strong>Iveco</strong></li>
+            <div id="div-iveco" style="display: none;">
+                <p>Logotipo: <img src="img/logo-iveco.png" alt="Logotipo Iveco" width="65"></p>
+                <p style="display: block;">Nº de modelos disponíveis no jogo: 2</p>
+            </div>
+        
             
         </ul>
     </div>
+    <!-- Fim Hide & Show -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+    <!-- Importações JavaScript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/relogio.js"></script>
+    <script src="js/hideAndShow.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/inicio-quiz.js"></script>
 </body>
 
 </html>

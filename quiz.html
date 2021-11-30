@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<title>Trabalho 02 - TARC1 - 2021.2 - Eduardo Coelho</title>
+<meta charset="UTF-8">
+<!-- Importando fonte do Google Open Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Importando Fonte Awesome -->
+<script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
+<!-- Importando Bootstrap -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="js/popper.min.js"></script>
+<!-- Importanto arquivo CSS -->
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h1 id="unirio">
+        TARC 1
+    </h1>
+    <ul>
+        <li class="dados-trabalho">Aluno: Eduardo Coelho</li>
+        <li class="dados-trabalho">Disciplina: TARC 1</li>
+        <li class="dados-trabalho">Professor(a): Morganna Carmem Diniz</li>
+        <li class="dados-trabalho">Tema: Euro Truck Simulator 2 🚚</li>
+        <li class="dados-trabalho">Repositório no GitHub: 
+            <a href="https://github.com/theyCallMeDudu/tarc1_trabalho_02" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+    
+    <hr>
+
+    <button id="btn-voltar-index" onclick="voltarAoIndex()" class="btn btn-dark">Voltar à página inicial</button>
+    <!-- Início Quiz -->
+    <hr>
+    <h2>Quiz</h2>
+    <div id="quiz">
+        <div class="box-quiz">
+            <div class="content-quiz">
+                <h4>Quiz ETS2</h4>
+                <div class="container">
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h2 class="d-flex justify-content-center mb-3">Bienvenido al Cuestionario Virtual</h2>
+            
+                            <div id="titulo-pergunta" class="form-group font-weight-bold">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="alternativas" value="1" checked><span
+                                    id="opcao1"></span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="alternativas" value="2"><span
+                                    id="opcao2"></span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="alternativas" value="3"><span
+                                    id="opcao3"></span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="alternativas" value="4"><span
+                                    id="opcao4"></span>
+                            </div>
+            
+            
+                            <button id="btn-avancar" class="btn btn-primary mt-4">Avançar</button>
+            
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+    <!-- Fim Quiz -->
+
+    <!-- Importações JavaScript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/perguntas.js"></script>
+
+    <script>
+        var voltar = document.getElementById('btn-voltar-index');
+
+        function voltarAoIndex() {
+            location.href="index.html";
+        }
+    </script>
+</body>
+
+</html>

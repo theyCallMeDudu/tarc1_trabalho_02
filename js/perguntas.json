@@ -1,0 +1,62 @@
+[
+    {
+        "resposta": 2,
+        "tituloPergunta": "¿Pregunta 1?",
+        "opcoes": [
+            {
+                "alternativa1": "Alternativa incorrecta",
+                "alternativa2": "Alternativa correcta",
+                "alternativa3": "Alternativa incorrecta",
+                "alternativa4": "Alternativa incorrecta"
+            }
+        ]
+    },
+    {
+        "resposta": 1,
+        "tituloPergunta": "¿Pregunta 2?",
+        "opcoes": [
+            {
+                "alternativa1": "Alternativa correcta",
+                "alternativa2": "Alternativa incorrecta",
+                "alternativa3": "Alternativa incorrecta",
+                "alternativa4": "Alternativa incorrecta"
+            }
+        ]
+    },
+    {
+        "resposta": 4,
+        "tituloPergunta": "¿Pregunta 3?",
+        "opcoes": [
+            {
+                "alternativa1": "Alternativa incorrecta",
+                "alternativa2": "Alternativa incorrecta",
+                "alternativa3": "Alternativa incorrecta",
+                "alternativa4": "Alternativa correcta"
+            }
+        ]
+    },
+    {
+        "resposta": 3,
+        "tituloPergunta": "¿Pregunta 4?",
+        "opcoes": [
+            {
+                "alternativa1": "Alternativa incorrecta",
+                "alternativa2": "Alternativa incorrecta",
+                "alternativa3": "Alternativa correcta",
+                "alternativa4": "Alternativa incorrecta"
+            }
+        ]
+    },
+    {
+        "resposta": 1,
+        "tituloPergunta": "¿Pregunta 5?",
+        "opciones": [
+            {
+                "alternativa1": "Alternativa correcta",
+                "alternativa2": "Alternativa incorrecta",
+                "alternativa3": "Alternativa incorrecta",
+                "alternativa4": "Alternativa incorrecta"
+            }
+        ]
+    }
+]
