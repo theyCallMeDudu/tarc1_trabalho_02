@@ -8,8 +8,22 @@ class Quiz {
 
         this.salvarQuizEmLocalStorage(dadosJogador);
 
-        location.href = "quiz.html";
+        location.href = "quiz.html";        
     }
+    
+    // saudarJogador(nome) {
+    //     const saudacao = document.createElement('div');
+    //     const divSaudacao = getElementById('div-saudacao');
+        
+    //     saudacao.innerHTML = `
+    //         <p>${'Bem-vindo ao quiz de Euro Truck Simulator 2, ', nome}</p>
+    //     `;
+
+    //     divSaudacao.appendChild(saudacao);
+
+    // }
+    
+    
         
     salvarQuizEmLocalStorage(dadosJogador) {
         let quiz;

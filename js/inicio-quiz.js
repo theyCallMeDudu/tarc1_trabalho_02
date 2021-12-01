@@ -20,5 +20,6 @@ function verificar(e) {
         alert('Opa! Preencha seu nome para começar!');
     } else {
         quiz.comecarQuiz(nome);
+        // quiz.saudarJogador(nome);
     }
 }
