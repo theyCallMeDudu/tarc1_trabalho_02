@@ -1,0 +1,86 @@
+[
+    {
+        "resposta": 2,
+        "tituloPergunta": "Em que ano foi lançado o Euro Truck Simulator 2?",
+        "opcoes": [
+            {
+                "alternativa1": "2011",
+                "alternativa2": "2012",
+                "alternativa3": "2010",
+                "alternativa4": "2013"
+            }
+        ]
+    },
+    {
+        "resposta": 1,
+        "tituloPergunta": "Que desenvolvedora criou o Euro Truck Simulator 2?",
+        "opcoes": [
+            {
+                "alternativa1": "SCS Software",
+                "alternativa2": "Naughty Dog",
+                "alternativa3": "Santa Monica",
+                "alternativa4": "Ubisoft"
+            }
+        ]
+    },
+    {
+        "resposta": 4,
+        "tituloPergunta": "Quantas marcas de caminhão estão disponíveis no jogo?",
+        "opcoes": [
+            {
+                "alternativa1": "4",
+                "alternativa2": "5",
+                "alternativa3": "6",
+                "alternativa4": "7"
+            }
+        ]
+    },
+    {
+        "resposta": 4,
+        "tituloPergunta": "Para quais sistemas operacionais o ETS 2 está disponível?",
+        "opcoes": [
+            {
+                "alternativa1": "Windows",
+                "alternativa2": "Linux",
+                "alternativa3": "OSX",
+                "alternativa4": "Todas as respostas acima"
+            }
+        ]
+    },
+    {
+        "resposta": 1,
+        "tituloPergunta": "Euro Truck Simulator 2 permite dirigir:",
+        "opcoes": [
+            {
+                "alternativa1": "Caminhões",
+                "alternativa2": "Ônibus",
+                "alternativa3": "Vãs",
+                "alternativa4": "Trens"
+            }
+        ]
+    },
+    {
+        "resposta": 3,
+        "tituloPergunta": "Qual das cidades abaixo não está disponível no jogo?",
+        "opcoes": [
+            {
+                "alternativa1": "Zurique",
+                "alternativa2": "Roma",
+                "alternativa3": "Tomsk",
+                "alternativa4": "Kaunas"
+            }
+        ]
+    },
+    {
+        "resposta": 3,
+        "tituloPergunta": "Qual das cidades abaixo não está disponível no jogo?",
+        "opcoes": [
+            {
+                "alternativa1": "Zurique",
+                "alternativa2": "Roma",
+                "alternativa3": "Tomsk",
+                "alternativa4": "Kaunas"
+            }
+        ]
+    }
+]

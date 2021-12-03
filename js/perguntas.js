@@ -12,16 +12,16 @@ let i = 0;
 let resposta;
 
 function mostrar() {
-    fetch('js/perguntas.json')
+    fetch('json/perguntas.json')
         .then(response => {
             return response.json();
         })
         .then(response => {
 
-            if (i == response.length - 1) {
-                location.href = 'index.html';
-            } else {   
-                //console.log(response);
+            if (i === response.length) {
+                location.href = "index.html";
+            } 
+            else {   
                 document.getElementById('titulo-pergunta').innerHTML = `${i + 1}. ${response[i].tituloPergunta}`
                 document.getElementById('opcao1').innerHTML = response[i].opcoes[0].alternativa1;
                 document.getElementById('opcao2').innerHTML = response[i].opcoes[0].alternativa2;
@@ -29,10 +29,9 @@ function mostrar() {
                 document.getElementById('opcao4').innerHTML = response[i].opcoes[0].alternativa4;
                 
                 resposta = response[i].resposta;
+                console.log('pergunta: ', response[i].opcoes);
 
-                i++;
-                console.log("i = ", i);
-                console.log("response length = ", response.length);
+                i = i + 1;
             }
         })
         .catch(error => {
