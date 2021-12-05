@@ -72,14 +72,50 @@
         ]
     },
     {
-        "resposta": 3,
-        "tituloPergunta": "Qual das cidades abaixo não está disponível no jogo?",
+        "resposta": 1,
+        "tituloPergunta": "Qual dos países abaixo não está disponível no jogo base?",
         "opcoes": [
             {
-                "alternativa1": "Zurique",
-                "alternativa2": "Roma",
-                "alternativa3": "Tomsk",
-                "alternativa4": "Kaunas"
+                "alternativa1": "Portugal",
+                "alternativa2": "França",
+                "alternativa3": "Itália",
+                "alternativa4": "Alemanha"
+            }
+        ]
+    },
+    {
+        "resposta": 2,
+        "tituloPergunta": "Como é popularmente conhecida a cama do caminhoneiro?",
+        "opcoes": [
+            {
+                "alternativa1": "Baú",
+                "alternativa2": "Boleia",
+                "alternativa3": "Reboque",
+                "alternativa4": "Cabine"
+            }
+        ]
+    },
+    {
+        "resposta": 3,
+        "tituloPergunta": "Qual das marcas abaixo não está licenciada no jogo?",
+        "opcoes": [
+            {
+                "alternativa1": "Volvo",
+                "alternativa2": "MAN",
+                "alternativa3": "Volkswagen",
+                "alternativa4": "Mercedes"
+            }
+        ]
+    },
+    {
+        "resposta": 3,
+        "tituloPergunta": "Qual das plataformas digitais abaixo disponibiliza o jogo atualmente?",
+        "opcoes": [
+            {
+                "alternativa1": "Epic Games",
+                "alternativa2": "Playstation Store",
+                "alternativa3": "Steam",
+                "alternativa4": "Xbox Game Pass"
             }
         ]
     }
