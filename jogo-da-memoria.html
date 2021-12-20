@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<title>Trabalho 02 - TARC1 - 2021.2 - Eduardo Coelho</title>
+<meta charset="UTF-8">
+<!-- Importando fonte do Google Open Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Importando Fonte Awesome -->
+<script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
+<!-- Importando Bootstrap -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="js/popper.min.js"></script>
+<!-- Importanto arquivo CSS -->
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/jogo-da-memoria.css"/>
+</head>
+
+<body>
+    <h1 id="unirio">
+        TARC 1
+    </h1>
+    <ul>
+        <li class="dados-trabalho">Aluno: Eduardo Coelho</li>
+        <li class="dados-trabalho">Disciplina: TARC 1</li>
+        <li class="dados-trabalho">Professor(a): Morganna Carmem Diniz</li>
+        <li class="dados-trabalho">Tema: Euro Truck Simulator 2 🚚</li>
+        <li class="dados-trabalho">Repositório no GitHub: 
+            <a href="https://github.com/theyCallMeDudu/tarc1_trabalho_02" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+    
+    <hr>
+
+    <button id="btn-voltar-index" onclick="voltarAoIndex()" class="btn btn-dark">Voltar à página inicial</button>
+    <!-- Início jogo da memoria -->
+    <hr>
+    <h2>Jogo da Memória</h2>
+    
+    <div style="display: flex; justify-content: center;">
+        <div id="container">
+            <div class="card" id="card0">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card1">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card2">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card3">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card4">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card5">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card6">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card7">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card8">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card9">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card10">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card11">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card12">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card13">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card14">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+            <div class="card" id="card15">
+                <div class="face back"></div>
+                <div class="face front"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim jogo da memoria -->
+
+    <!-- Importações JavaScript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/jogo-da-memoria.js"></script>
+
+    <script>
+        var voltar = document.getElementById('btn-voltar-index');
+
+        function voltarAoIndex() {
+            location.href="index.html";
+        }
+    </script>
+</body>
+
+</html>
