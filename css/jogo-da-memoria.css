@@ -1,9 +1,12 @@
+body {
+    text-align: center;
+    padding: 0;
+}
+
 #container {
-    width: 1325px;
+    width: 100%;
     height: 495px;
     margin-top: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
 }
 
 .card {
@@ -11,6 +14,11 @@
     height: 240px;
     position: absolute;
     border-radius: 10px;
+    perspective: 600px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #aaa;
 }
 
 .face {
@@ -18,8 +26,50 @@
     height: 100%;
     position: absolute;
     border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
 }
 
 .back {
     background: url('../img/jogo-da-memoria/verso.jpg');
 }
+
+.back.flipped {
+    transform:  rotateY(180deg); // rotaciona a carta 180°, ou seja, vira a carta
+}
+
+.front {
+    transform:  rotateY(-180deg);
+}
+
+.front.flipped {
+    transform: rotateY(0deg);
+}
+
+.face.flipped.match {
+    box-shadow: 0 0 10px #0F0;
+}
+
+#img-match-sign {
+    position: relative;
+    top: 250px;
+    transition-property: top, opacity;
+    transition-duration: 1.5s;
+    opacity: 0;
+    z-index: -1;
+}
+
+#modal-game-over {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+    opacity: 0;
+}
+
+#img-game-over {
+    margin-top: 100px;
+}
+

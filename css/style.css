@@ -19,7 +19,7 @@ h1 {
 }
 
 .cabecalho {
-  background-image: url('/img/banner.jpg');
+  background-image: url('../img/banner.jpg');
   font-weight: 800;
 }
 
@@ -76,7 +76,7 @@ ul li a:visited {
     justify-content: center;                  /* alinhamento dos ítens ao longo do eixo principal */
     align-items: center;
     /*background: lightgray;*/                /* Cor do background */
-    background: #fff url(/img/fundo-relogio_03.png);     /* Imagem no fundo */
+    background: #fff url(../img/fundo-relogio_03.png);     /* Imagem no fundo */
     background-size: cover;                   /* especifica que a imagem cobre todo o fundo (pode indicar tamanho ou "auto") */
     border-radius: 50%;                       /* Areedondamento das bordas */
     border: 5px solid goldenrod;
@@ -200,7 +200,7 @@ ul li a:visited {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-image: url('/img/tire.png');
+    background-image: url('../img/tire.png');
 }
 
 

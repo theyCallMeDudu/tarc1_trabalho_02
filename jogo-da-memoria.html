@@ -17,29 +17,7 @@
 </head>
 
 <body>
-    <h1 id="unirio">
-        TARC 1
-    </h1>
-    <ul>
-        <li class="dados-trabalho">Aluno: Eduardo Coelho</li>
-        <li class="dados-trabalho">Disciplina: TARC 1</li>
-        <li class="dados-trabalho">Professor(a): Morganna Carmem Diniz</li>
-        <li class="dados-trabalho">Tema: Euro Truck Simulator 2 🚚</li>
-        <li class="dados-trabalho">Repositório no GitHub: 
-            <a href="https://github.com/theyCallMeDudu/tarc1_trabalho_02" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </li>
-    </ul>
-    
-    <hr>
-
-    <button id="btn-voltar-index" onclick="voltarAoIndex()" class="btn btn-dark">Voltar à página inicial</button>
-    <!-- Início jogo da memoria -->
-    <hr>
-    <h2>Jogo da Memória</h2>
-    
-    <div style="display: flex; justify-content: center;">
+    <!-- Início jogo da memoria -->    
         <div id="container">
             <div class="card" id="card0">
                 <div class="face back"></div>
@@ -105,9 +83,20 @@
                 <div class="face back"></div>
                 <div class="face front"></div>
             </div>
+
+            <img src="img/jogo-da-memoria/match.png" id="img-match-sign">
+
         </div>
+
+    <div id="modal-game-over">
+        <img src="img/jogo-da-memoria/gameover.png" id="img-game-over">
     </div>
     <!-- Fim jogo da memoria -->
+
+    <div style="margin: 60px 0 50px 0;">
+        <button id="btn-voltar-index" onclick="voltarAoIndex()" class="btn btn-dark">Voltar à página inicial</button>    
+    </div>
+    
 
     <!-- Importações JavaScript -->
     <script src="js/jquery-3.4.1.min.js"></script>
