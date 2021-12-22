@@ -7,6 +7,8 @@
 
     var modalGameOver = document.querySelector("#modal-game-over");
 
+    var modalGameOverByTime = document.querySelector("#modal-game-over-by-time");
+
     var imgMatchSign = document.querySelector("#img-match-sign");
 
     for (var i = 0; i < 16; i++) {
@@ -18,11 +20,18 @@
         images.push(img);
     }
 
+    document.getElementById('timer').innerHTML =
+    05 + ":" + 00;
+    
     // Inicia o jogo
     startGame();
+    
 
     // Função que inicia/reinicia o jogo
     function startGame() {
+        // Inicia o contador (5 min)
+        startTimer();
+
         // Zera o numero de acertos quando o jogo comeca
         matches = 0;
 
@@ -142,9 +151,36 @@
         imgMatchSign.style.top = 150 + "px";
         imgMatchSign.style.opacity = 1;
         setTimeout(function() {
-           imgMatchSign.style.zIndex = -1;
-        imgMatchSign.style.top = 250 + "px";
-        imgMatchSign.style.opacity = 0; 
-    }, 1500);
+            imgMatchSign.style.zIndex = -1;
+            imgMatchSign.style.top = 250 + "px";
+            imgMatchSign.style.opacity = 0; 
+        }, 1500);
     }
+
+    function startTimer() {
+        var presentTime = document.getElementById('timer').innerHTML;
+        var timeArray = presentTime.split(/[:]+/);
+        var m = timeArray[0];
+        var s = checkSecond((timeArray[1] - 1));
+        if(s==59){m=m-1}
+        
+        if(m < 0){
+            return
+        } else if (m == 0 && s <= 00) {
+            document.getElementById('timer').style.color = "red";
+            document.getElementById('game-status').innerHTML = "GAME OVER";
+            setInterval(location.reload(), 30000);
+        }
+        
+        document.getElementById('timer').innerHTML =
+          m + ":" + s;
+        console.log(m)
+        setTimeout(startTimer, 1200); 
+      }
+      
+      function checkSecond(sec) {
+        if (sec < 10 && sec >= 0) {sec = "0" + sec}; // adiciona zero na frente de números menores que 10
+        if (sec < 0) {sec = "59"};
+        return sec;
+      }
 }());

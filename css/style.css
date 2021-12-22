@@ -1,26 +1,26 @@
 * {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    /* color: #000; */
 }
 
 body {
     /* background-color: #31365e; */
-    background-image: linear-gradient(#4C4C4C, goldenrod);
+    background-color: #9b803b;
     /* background-image: linear-gradient(#2a2e55, #31365e); */
     padding-left: 10%;
     padding-right: 10%;
+    color: #000;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h1 {
-    color: silver;
-}
-
 .cabecalho {
-  background-image: url('../img/banner.jpg');
+  background-image: url('../img/banner-2.jpg');
   font-weight: 800;
+  height: 150px;
+  margin-top: 20px;
 }
 
 h2 {
@@ -34,9 +34,10 @@ h3 {
 }
 
 .dados-trabalho {
-    border-left: 2px solid goldenrod;
+    /* border-left: 2px solid goldenrod; */
     padding-left: 4px;
     margin: 0;
+    color: #FFF;
 }
 
 ul {
@@ -203,6 +204,11 @@ ul li a:visited {
     background-image: url('../img/tire.png');
 }
 
+.titulo-quiz {
+    color: goldenrod;
+    text-shadow: 4px 4px black;
+}
+
 
 #form-quiz {
     margin-top: 10px;
@@ -245,3 +251,16 @@ ul li a:visited {
     transition: 0.5s;
 }
 
+#timer {
+    font-weight: 800;
+    color: #173165;
+    border: 2px solid #173165;
+    padding: 2px 6px;
+    font-size: 18pt;
+    background-color: gold;
+}
+
+#game-status {
+    font-size: 16pt;
+    font-weight: 700;
+}
