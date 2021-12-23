@@ -20,16 +20,14 @@
         images.push(img);
     }
 
-    document.getElementById('timer').innerHTML =
-    05 + ":" + 00;
-    
     // Inicia o jogo
     startGame();
     
-
     // Função que inicia/reinicia o jogo
     function startGame() {
         // Inicia o contador (5 min)
+        document.getElementById('timer').innerHTML =
+        05 + ":" + 01;
         startTimer();
 
         // Zera o numero de acertos quando o jogo comeca
@@ -167,6 +165,8 @@
         if(m < 0){
             return
         } else if (m == 0 && s <= 00) {
+            document.getElementById('timer').innerHTML =
+            00 + ":" + 00;
             document.getElementById('timer').style.color = "red";
             document.getElementById('game-status').innerHTML = "GAME OVER";
             setInterval(location.reload(), 30000);
@@ -175,7 +175,7 @@
         document.getElementById('timer').innerHTML =
           m + ":" + s;
         console.log(m)
-        setTimeout(startTimer, 1200); 
+        setTimeout(startTimer, 1000); 
       }
       
       function checkSecond(sec) {
