@@ -1,5 +1,11 @@
 # tarc1_trabalho_02
+  
  Trabalho final individual da disciplina de Tópicos Avançados em Redes de Computadores 1
+ 
+ Universidade Federal do Estado do Rio de Janeiro
+ Sistemas de Informação
+ Tópicos Avançados em Redes de Computadores 1
+ Eduardo Coelho e Silva
 
  . Instruções:
     - Abra a pasta na sua IDE;
