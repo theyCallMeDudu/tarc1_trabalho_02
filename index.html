@@ -38,19 +38,23 @@
         <ul>
             <h3>Atividades Desenvolvidas</h3>
             <li class="atividade-lista">
-                <a href="#item-relogio">Relógio</a>
+                <a href="#item-relogio">Relógio (atividade 1)</a>
             </li>
             
             <li class="atividade-lista">
-                <a href="#quiz">Quiz</a>
+                <a href="#quiz">Quiz (atividade 2)</a>
             </li>
 
             <li class="atividade-lista">
-                <a href="#jogo-da-memoria">Jogo da Memória</a>
+                <a href="#jogo-da-memoria">Jogo da Memória (atividade 3)</a>
             </li>
             
             <li class="atividade-lista">
-                <a href="#marcas">Hide & Show</a>
+                <a href="#jogo-da-forca">Jogo da Forca (atividade 4)</a>
+            </li>
+
+            <li class="atividade-lista">
+                <a href="#marcas">Hide & Show (atividade 5)</a>
             </li>
 
         </ul>
@@ -91,7 +95,7 @@
 
     <!-- Início Relógio -->
     <hr>
-    <h2>Relógio <i class="fas fa-clock"></i></h2>
+    <h2>Relógio <i class="fas fa-clock"></i> (atividade 1)</h2>
     
     <div class="center"> 
         <div class="relogio-analogico" id="item-relogio">
@@ -113,7 +117,7 @@
 
     <!-- Início Quiz -->
     <hr>
-    <h2>Quiz <i class="fas fa-book-reader"></i></h2>
+    <h2>Quiz <i class="fas fa-book-reader"></i> (atividade 2)</h2>
     <div id="quiz">
         <div class="box-quiz">
             <div class="content-quiz">
@@ -152,7 +156,7 @@
 
     <!-- Inicio jogo da memoria -->
     <hr>
-    <h2>Jogo da Memória <i class="fas fa-brain"></i></h2>
+    <h2>Jogo da Memória <i class="fas fa-brain"></i> (atividade 3)</h2>
     <div id="jogo-da-memoria">
         <h5>Desafie-se num jogo da memória sobre caminhões presentes em Euro Truck Simulator 2!</h5>
         <a href="jogo-da-memoria.html" class="btn btn-jogo-memoria">
@@ -161,9 +165,31 @@
     </div>
     <!-- Fim jogo da memoria -->
 
+    <!-- Início jogo da forca -->
+    <hr>
+    <h2>Jogo da forca <i class="fas fa-gamepad"></i> (atividade 4)</h2>
+    <div id="jogo-da-forca">
+        <p>
+            Aristides Filho é um grande caminhoneiro que está sempre 
+            pronto para qualquer entrega. Entretanto, parece que em uma 
+            de suas viagens Europa a fora ele se meteu em uma fria.
+        </p>
+        <p>
+            Desafie-se neste jogo da forca para salvar o pescoço de nosso querido 
+            Aristides!
+        </p>
+        <section class="flex-container-2">
+            <img id="forca" src="img/jogo-da-forca/forca.jpg" alt="Forca">
+            <div id="palavra" class="flex-container-2-2"></div>
+            <div id="novo"></div>
+        </section>
+        <section id="letras" class="flex-container-3"></section>
+    </div>
+    <!-- Fim jogo da forca -->
+
     <!-- Início Hide & Show -->
     <hr>
-    <h2>Hide & Show (marcas de caminhões) <i class="fas fa-copyright"></i></h2>
+    <h2>Hide & Show (marcas de caminhões) <i class="fas fa-copyright"></i> (atividade 5)</h2>
 
     <div id="marcas">
         <ul>
@@ -228,6 +254,7 @@
     <script src="js/hideAndShow.js"></script>
     <script src="js/quiz.js"></script>
     <script src="js/inicio-quiz.js"></script>
+    <script src="js/jogo-da-forca.js"></script>
 </body>
 
 </html>
